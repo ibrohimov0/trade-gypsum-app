@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(),
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xff191825),
       body: ListView(
         children: const [
           Column(
@@ -22,7 +22,10 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Text(
-                  "ok",
+                  "The BNBM",
+                  style: TextStyle(
+                    color: Color(0xffffffff)
+                  ),
                 ),
               )
             ],
