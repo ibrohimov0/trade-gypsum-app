@@ -10,15 +10,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(
-            "../assets/logo.png",
+          Image.network(
+            "https://res.cloudinary.com/ds9evspym/image/upload/v1703694773/BNBM%20trade-gypsum/BNBM_xm0j8g.png",
             fit: BoxFit.contain,
-            height: 32,
-          ),
-          Container(
-            padding: const EdgeInsets.all(8.0),
-            child: Text("BNBM"),
-          ),
+            height: 40,
+          )
         ],
       ),
       backgroundColor: Color(0xff191825),
