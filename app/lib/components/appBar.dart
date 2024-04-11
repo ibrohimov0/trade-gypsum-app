@@ -11,12 +11,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       "BNBM",
           style: TextStyle(
             color: Color(0xffEE1B3F),
-            fontSize: 18,
-            fontWeight: FontWeight.bold
+            fontSize: 27,
+            fontWeight: FontWeight.bold,
           ),
         ),
       backgroundColor: Color(0xff191825),
-      elevation: 0.0,
+      elevation: 5.0,
       centerTitle: true,
       leading: GestureDetector(
         onTap: () {
