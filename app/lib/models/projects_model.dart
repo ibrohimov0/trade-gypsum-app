@@ -13,8 +13,8 @@ class ProjectModel {
     required this.text
   });
   static List<ProjectModel> getProjects() {
-    List<ProjectModel> projects = [];
-    projects.add(
+    List<ProjectModel> projectsArr = [];
+    projectsArr.add(
       ProjectModel(
         boxColor: Color(0xff03001C), 
         iconPath: "https://res.cloudinary.com/ds9evspym/image/upload/v1712851283/BNBM%20trade-gypsum/felwtjoaeoy4nzhgdefd.png",
@@ -22,7 +22,7 @@ class ProjectModel {
         text: "SINOGIPS 9.5 - гипсокартон патолочный. Размер:(1200*2500*9.5)"
       )
     );
-    projects.add(
+    projectsArr.add(
       ProjectModel(
         boxColor: Color(0xff03001C), 
         iconPath: "https://res.cloudinary.com/ds9evspym/image/upload/v1712851283/BNBM%20trade-gypsum/felwtjoaeoy4nzhgdefd.png",
@@ -30,7 +30,7 @@ class ProjectModel {
         text: "SINOGIPS 9.5 -гипсокартон патолочный влагостойкий. Размер : (1200*2500*9,5)"
       )
     );
-    projects.add(
+    projectsArr.add(
       ProjectModel(
         boxColor: Color(0xff03001C), 
         iconPath: "https://res.cloudinary.com/ds9evspym/image/upload/v1712851283/BNBM%20trade-gypsum/felwtjoaeoy4nzhgdefd.png",
@@ -38,6 +38,6 @@ class ProjectModel {
         text: "SINOGIPS 12.5 -гипсокартон стеновой влагостойкий. Размер : (1200*2500*12,5)"
       )
     );
-    return projects;
+    return projectsArr;
   }
 }

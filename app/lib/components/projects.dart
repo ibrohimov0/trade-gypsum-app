@@ -36,7 +36,7 @@ class Projects extends StatelessWidget{
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Image.asset(
+                  Image.network(
                     projectsArr[index].iconPath,
                     width: 100,
                     height: 100,
