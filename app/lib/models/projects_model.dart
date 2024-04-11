@@ -17,7 +17,7 @@ class ProjectModel {
     projectsArr.add(
       ProjectModel(
         boxColor: Color(0xff03001C), 
-        iconPath: "https://res.cloudinary.com/ds9evspym/image/upload/v1712851283/BNBM%20trade-gypsum/felwtjoaeoy4nzhgdefd.png",
+        iconPath: "assets/images/gypsum.png",
         name: "sinogips", 
         text: "SINOGIPS 9.5 - гипсокартон патолочный. Размер:(1200*2500*9.5)"
       )
@@ -25,7 +25,7 @@ class ProjectModel {
     projectsArr.add(
       ProjectModel(
         boxColor: Color(0xff03001C), 
-        iconPath: "https://res.cloudinary.com/ds9evspym/image/upload/v1712851283/BNBM%20trade-gypsum/felwtjoaeoy4nzhgdefd.png",
+        iconPath: "assets/images/gypsum.png",
         name: "sinogips", 
         text: "SINOGIPS 9.5 -гипсокартон патолочный влагостойкий. Размер : (1200*2500*9,5)"
       )
@@ -33,7 +33,7 @@ class ProjectModel {
     projectsArr.add(
       ProjectModel(
         boxColor: Color(0xff03001C), 
-        iconPath: "https://res.cloudinary.com/ds9evspym/image/upload/v1712851283/BNBM%20trade-gypsum/felwtjoaeoy4nzhgdefd.png",
+        iconPath: "assets/images/gypsum.png",
         name: "sinogips", 
         text: "SINOGIPS 12.5 -гипсокартон стеновой влагостойкий. Размер : (1200*2500*12,5)"
       )

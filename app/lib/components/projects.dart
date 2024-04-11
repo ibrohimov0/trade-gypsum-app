@@ -1,9 +1,7 @@
-import 'dart:js';
-
 import 'package:app/models/projects_model.dart';
 import 'package:flutter/material.dart';
 
-class Projects extends StatelessWidget{
+class ProjectsSection extends StatelessWidget{
   List<ProjectModel> projectsArr = [];
   void _getIntialInfo() {
     projectsArr = ProjectModel.getProjects();
@@ -36,7 +34,7 @@ class Projects extends StatelessWidget{
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Image.network(
+                  Image.asset(
                     projectsArr[index].iconPath,
                     width: 100,
                     height: 100,
@@ -70,7 +68,7 @@ class Projects extends StatelessWidget{
                     blurRadius: 40,
                     spreadRadius: 0
                   )
-                ]
+                ],
               ),
             );
           }

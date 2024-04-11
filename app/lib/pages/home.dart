@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: [
           Header(),
-          Projects()
+          ProjectsSection()
         ]
       ),
     );
