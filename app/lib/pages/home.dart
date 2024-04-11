@@ -1,5 +1,6 @@
 import 'package:app/components/appBar.dart';
 import 'package:app/components/header.dart';
+import 'package:app/components/projects.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,7 +19,8 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Color(0xff191825),
       body: ListView(
         children: [
-          Header()
+          Header(),
+          Projects()
         ]
       ),
     );

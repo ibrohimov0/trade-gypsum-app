@@ -25,7 +25,7 @@ class Projects extends StatelessWidget{
           ),
         ),
         const SizedBox(height: 15,),
-        const ListView.separated(
+        ListView.separated(
           itemCount: projectsArr.length,
           shrinkWrap: true,
           separatorBuilder: (context, index) => const SizedBox(height: 25,),
@@ -44,11 +44,35 @@ class Projects extends StatelessWidget{
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    
-                  )
+                    children: [
+                      Text(
+                        projectsArr[index].name,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white70,
+                          fontSize: 16
+                        ),
+                      ),
+                      Text(
+                        projectsArr[index].text,
+                      ),
+                    ],
+                  ),
                 ],
               ),
-            )
+              decoration: BoxDecoration(
+                color: projectsArr[index].boxColor,
+                borderRadius: BorderRadius.circular(16),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xff1D1617).withOpacity(0.07),
+                    offset: const Offset(0,10),
+                    blurRadius: 40,
+                    spreadRadius: 0
+                  )
+                ]
+              ),
+            );
           }
         )
       ],
