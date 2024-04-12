@@ -11,10 +11,11 @@ class Header extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(top: 50,bottom: 10),
           child: Text(
-            "The BNBM Project view",
+            "BNBM \n gipsokartonlarini ko'rish",
+            textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.white,
-              fontSize: 24,
+              fontSize: 26,
               fontWeight: FontWeight.bold,
             ),
           ),

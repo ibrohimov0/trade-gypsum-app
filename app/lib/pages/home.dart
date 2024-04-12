@@ -1,4 +1,5 @@
 import 'package:app/components/appBar.dart';
+import 'package:app/components/footer.dart';
 import 'package:app/components/header.dart';
 import 'package:app/components/projects.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,9 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: [
           Header(),
-          ProjectsSection()
+          ProjectsSection(),
+          SizedBox(height: 30,),
+          Footer()
         ]
       ),
     );
