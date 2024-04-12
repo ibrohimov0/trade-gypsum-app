@@ -36,7 +36,7 @@ class Footer extends StatelessWidget {
               width: 24,
               height: 24,
               child: Image.asset(
-                "assets/images/gypsum(3).png",
+                "assets/images/insta.png",
                 fit: BoxFit.cover,
               ),
             ),
