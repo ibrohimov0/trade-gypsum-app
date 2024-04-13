@@ -9,7 +9,7 @@ class Header extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 50,bottom: 10),
+          padding: EdgeInsets.only(top: 30,bottom: 10),
           child: Text(
             "BNBM \n gipsokartonlarini ko'rish",
             textAlign: TextAlign.center,
