@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -11,23 +13,15 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.network(
-            "https://res.cloudinary.com/ds9evspym/image/upload/v1703694773/BNBM%20trade-gypsum/BNBM_xm0j8g.png",
+            "assets/images/BNBM.png",
             fit: BoxFit.contain,
             height: 40,
           )
         ],
       ),
-      backgroundColor: Color(0xff191825),
+      backgroundColor: Color.fromARGB(255, 25, 24, 37),
       elevation: 5.0,
       centerTitle: true,
     );
   }
-}
-      // title: const Text(
-      //   "BNBM",
-      //   style: TextStyle(
-      //     color: Color(0xffEE1B3F),
-      //     fontSize: 27,
-      //     fontWeight: FontWeight.bold,
-      //   ),
-      // ),
+} 

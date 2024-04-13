@@ -7,9 +7,8 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16), // Add padding for spacing
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center, // Center align content
+      padding: EdgeInsets.all(16),
+      child: Row(
         children: [
           Text(
             'Visit our social networks:', // Add a label for clarity
@@ -19,29 +18,62 @@ class Footer extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 8), // Add space between text and button
-          ElevatedButton.icon(
-            onPressed: _launchURL,
-            icon: Icon(Icons.web),
-            label: Text('Open Website'),
-          ),
-          ElevatedButton.icon(
-            onPressed: _launchTelegram,
-            icon: Icon(Icons.telegram),
-            label: Text('Open Telegram'),
-          ),
-          ElevatedButton.icon(
-            onPressed: _launchInstagram,
-            icon: SizedBox(
-              width: 24,
-              height: 24,
-              child: Image.asset(
-                "assets/images/insta.png",
-                fit: BoxFit.cover,
-              ),
+          SizedBox(height: 15),
+          Column(children: [
+            ElevatedButton.icon(
+              onPressed: _launchURL,
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      const Color.fromARGB(255, 215, 129, 230)),
+                  iconColor: MaterialStateProperty.all<Color>(Colors.white)),
+              icon: Icon(Icons.web),
+              label:
+                  Text('Open Website', style: TextStyle(color: Colors.white)),
             ),
-            label: Text('Open Instagram'),
+            SizedBox(height: 8),
+            ElevatedButton.icon(
+              onPressed: _launchTelegram,
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      const Color.fromARGB(255, 0x88, 0xCC, 0xFF)),
+                  iconColor: MaterialStateProperty.all<Color>(Colors.white)),
+              icon: Icon(Icons.telegram),
+              label:
+                  Text('Open Telegram', style: TextStyle(color: Colors.white)),
+            )
+          ]),
+          SizedBox(height: 8),
+          Column(
+            children: [
+              ElevatedButton.icon(
+                onPressed: _launchInstagram,
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.black),
+                ),
+                icon: SizedBox(
+                  width: 20,
+                  height: 20,
+                  child: Image.asset(
+                    "assets/images/insta.png",
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                label: Text('Open Instagram',
+                    style: TextStyle(color: Colors.white)),
+              ),
+              ElevatedButton.icon(
+                onPressed: _phoneCall,
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(Colors.green),
+                  iconColor: MaterialStateProperty.all<Color>(Colors.white)
+                ),
+                icon: Icon(Icons.phone),
+                label: Text("Call BNBM", style: TextStyle(color: Colors.white),),
+              )
+            ],
           ),
+          SizedBox(height: 10),
         ],
       ),
     );
@@ -59,6 +91,7 @@ class Footer extends StatelessWidget {
       print('Error launching URL: $e');
     }
   }
+
   _launchTelegram() async {
     const url = 'https://t.me/rewerd_official';
     try {
@@ -71,6 +104,7 @@ class Footer extends StatelessWidget {
       print('Error launching URL: $e');
     }
   }
+
   _launchInstagram() async {
     const url = 'https://instagram.com/rewerd_official';
     try {
@@ -81,6 +115,15 @@ class Footer extends StatelessWidget {
       }
     } catch (e) {
       print('Error launching URL: $e');
+    }
+  }
+
+  _phoneCall() async{
+    final url = 'tel:+998910116631';
+    if(await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw "Could not launch $url";
     }
   }
 }
