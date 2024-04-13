@@ -12,7 +12,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.network(
+          Image.asset(
             "assets/images/BNBM.png",
             fit: BoxFit.contain,
             height: 40,

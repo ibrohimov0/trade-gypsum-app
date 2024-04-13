@@ -37,11 +37,9 @@ class _ProjectsSectionState extends State<ProjectsSection> {
         ),
         SizedBox(height: 15),
         Container(
-          child: ListView.separated(
+          height: 400, // Fixed height for the ListView
+          child: ListView.builder(
             itemCount: projectsArr.length,
-            shrinkWrap: true,
-            separatorBuilder: (context, index) => SizedBox(height: 25),
-            padding: const EdgeInsets.only(left: 20, right: 20),
             itemBuilder: (context, index) {
               return Container(
                 width: 100,
@@ -57,7 +55,7 @@ class _ProjectsSectionState extends State<ProjectsSection> {
                       height: 300,
                       child: Padding(
                         padding: const EdgeInsets.all(1.0),
-                        child: Image.network(projectsArr[index].iconPath),
+                        child: Image.asset(projectsArr[index].iconPath),
                       ),
                     ),
                     Text(
