@@ -36,52 +36,45 @@ class _ProjectsSectionState extends State<ProjectsSection> {
           ),
         ),
         SizedBox(height: 15),
-        Container(
-          height: 400, // Fixed height for the ListView
-          child: ListView.builder(
-            itemCount: projectsArr.length,
-            itemBuilder: (context, index) {
-              return Container(
-                width: 100,
-                decoration: BoxDecoration(
-                  color: projectsArr[index].boxColor,
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      width: 300,
-                      height: 300,
-                      child: Padding(
-                        padding: const EdgeInsets.all(1.0),
-                        child: Image.asset(projectsArr[index].iconPath),
-                      ),
+        Column(
+          children: projectsArr.map((project) {
+            return Container(
+              width: MediaQuery.of(context).size.width -50,
+              decoration: BoxDecoration(
+                color: project.boxColor,
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Image.asset(project.iconPath),
                     ),
-                    Text(
-                      projectsArr[index].name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        color: Colors.white,
-                        fontSize: 23,
-                      ),
+                  ),
+                  Text(
+                    project.name,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w400,
+                      color: Colors.white,
+                      fontSize: 23,
                     ),
-                    SizedBox(height: 20,),
-                    Text(
-                      projectsArr[index].text,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white70,
-                        fontSize: 15,
-                        
-                      ),
+                  ),
+                  SizedBox(height: 20,),
+                  Text(
+                    project.text,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 15,
                     ),
-                    SizedBox(height: 20,)
-                  ],
-                ),
-              );
-            },
-          ),
+                  ),
+                  SizedBox(height: 20,)
+                ],
+              ),
+            );
+          }).toList(),
         ),
       ],
     );
