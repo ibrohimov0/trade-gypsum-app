@@ -40,6 +40,7 @@ class _ProjectsSectionState extends State<ProjectsSection> {
           children: projectsArr.map((project) {
             return Container(
               width: MediaQuery.of(context).size.width -50,
+              margin: EdgeInsets.only(top: 15,bottom: 15,left: 25),
               decoration: BoxDecoration(
                 color: project.boxColor,
                 borderRadius: BorderRadius.circular(16),
@@ -49,7 +50,7 @@ class _ProjectsSectionState extends State<ProjectsSection> {
                 children: [
                   Container(
                     child: Padding(
-                      padding: const EdgeInsets.all(1.0),
+                      padding: const EdgeInsets.all(20),
                       child: Image.asset(project.iconPath),
                     ),
                   ),

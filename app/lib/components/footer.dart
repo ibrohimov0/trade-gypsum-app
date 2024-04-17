@@ -67,7 +67,7 @@ class Footer extends StatelessWidget {
           ),
           const SizedBox(height: 15),
           GestureDetector(
-            onTap: () => _launchRewerd,
+            onTap: _launchRewerd,
             child: Text(
             "Rewerd IT Company 2024. Click text",style: TextStyle(color: Colors.grey),
             ),
