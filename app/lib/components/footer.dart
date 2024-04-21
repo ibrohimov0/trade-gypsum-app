@@ -82,7 +82,7 @@ class Footer extends StatelessWidget {
     const url = 'https://instagram.com/rewerd_official';
     try {
       if (await canLaunch(url)) {
-        await launch(url);
+        await launch(url,universalLinksOnly:true);
       } else {
         throw 'Could not launch $url';
       }
@@ -95,7 +95,7 @@ class Footer extends StatelessWidget {
     const url = 'https://trade-gypsum.netlify.app';
     try {
       if (await canLaunch(url)) {
-        await launch(url);
+        await launch(url,universalLinksOnly:true);
       } else {
         throw 'Could not launch $url';
       }
@@ -108,7 +108,7 @@ class Footer extends StatelessWidget {
     const url = 'https://t.me/rewerd_official';
     try {
       if (await canLaunch(url)) {
-        await launch(url);
+        await launch(url,universalLinksOnly:true);
       } else {
         throw 'Could not launch $url';
       }
@@ -121,7 +121,7 @@ class Footer extends StatelessWidget {
     const url = 'https://instagram.com/rewerd_official';
     try {
       if (await canLaunch(url)) {
-        await launch(url);
+        await launch(url,universalLinksOnly:true);
       } else {
         throw 'Could not launch $url';
       }
@@ -133,7 +133,7 @@ class Footer extends StatelessWidget {
   _phoneCall() async {
     final url = 'tel:+998910116631';
     if (await canLaunch(url)) {
-      await launch(url);
+        await launch(url,universalLinksOnly:true);
     } else {
       throw "Could not launch $url";
     }
