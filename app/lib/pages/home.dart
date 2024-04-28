@@ -1,3 +1,4 @@
+import 'package:app/components/3d.dart';
 import 'package:app/components/appBar.dart';
 import 'package:app/components/footer.dart';
 import 'package:app/components/header.dart';
@@ -23,7 +24,8 @@ class _HomePageState extends State<HomePage> {
           Header(),
           ProjectsSection(),
           SizedBox(height: 30,),
-          Footer()
+          Footer(),
+          ThreeDObjectScreen()
         ]
       ),
     );
