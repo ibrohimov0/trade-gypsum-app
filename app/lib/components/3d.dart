@@ -14,6 +14,7 @@ class ThreeDObjectScreen extends StatelessWidget {
         autoRotate: true,
         iosSrc: 'https://modelviewer.dev/shared-assets/models/Astronaut.usdz',
         disableZoom: true,
+        disablePan: true,
       )
     );
   }

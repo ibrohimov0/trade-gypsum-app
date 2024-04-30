@@ -24,8 +24,7 @@ class _HomePageState extends State<HomePage> {
           Header(),
           ProjectsSection(),
           SizedBox(height: 30,),
-          Footer(),
-          ThreeDObjectScreen()
+          Footer()
         ]
       ),
     );

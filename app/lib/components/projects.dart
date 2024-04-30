@@ -1,3 +1,4 @@
+import 'package:app/components/3d.dart';
 import 'package:flutter/material.dart';
 import 'package:app/models/projects_model.dart';
 
@@ -42,14 +43,27 @@ class _ProjectsSectionState extends State<ProjectsSection> {
               onTap: () {
                 showModalBottomSheet(
                   context: context,
+                  scrollControlDisabledMaxHeightRatio: 500,
                   builder: ((context) {
-                    return Container();
+                    return Container(
+                      height: 500,
+                      margin: EdgeInsets.only(top: 25),
+                      decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          ThreeDObjectScreen()
+                        ],
+                      ),
+                    );
                   }),
                 );
               },
               child: Container(
                 width: MediaQuery.of(context).size.width - 50,
-                margin: EdgeInsets.only(top: 15, bottom: 15, left: 25),
+                margin: const EdgeInsets.only(top: 15, bottom: 15, left: 25),
                 decoration: BoxDecoration(
                   color: project.boxColor,
                   borderRadius: BorderRadius.circular(16),
