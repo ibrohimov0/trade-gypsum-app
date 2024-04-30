@@ -7,7 +7,7 @@ class ThreeDObjectScreen extends StatelessWidget {
       width: 500,
       height: 500,
       child: const ModelViewer(
-        backgroundColor: Color.fromARGB(0xFF, 0xEE, 0xEE, 0xEE),
+        backgroundColor: Color(0xff323643),
         src: 'https://modelviewer.dev/shared-assets/models/Astronaut.glb',
         alt: 'A 3D model of an astronaut',
         ar: true,

@@ -44,6 +44,7 @@ class _ProjectsSectionState extends State<ProjectsSection> {
                 showModalBottomSheet(
                   context: context,
                   scrollControlDisabledMaxHeightRatio: 500,
+                  backgroundColor: Color(0xff323643),
                   builder: ((context) {
                     return Container(
                       height: 500,
