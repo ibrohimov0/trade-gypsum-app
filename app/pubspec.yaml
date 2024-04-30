@@ -66,7 +66,6 @@ flutter:
   assets:
     - assets/atr_creed.glb
     - assets/images/
-    - assets/3d_models/
 
   #   - images/a_dot_ham.jpeg
 
