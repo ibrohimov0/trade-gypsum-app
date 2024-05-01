@@ -55,7 +55,7 @@ class _ProjectsSectionState extends State<ProjectsSection> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          ThreeDObjectScreen()
+                          ThreeDObjectScreen(androidPath: project.android3dPath, iosPath: project.ios3dPath)
                         ],
                       ),
                     );
