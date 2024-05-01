@@ -79,10 +79,10 @@ class Footer extends StatelessWidget {
   }
 
   _launchRewerd() async {
-    const url = 'https://instagram.com/rewerd_official';
+    var url = Uri.parse('https://instagram.com/rewerd_official');
     try {
-      if (await canLaunch(url)) {
-        await launch(url,universalLinksOnly:true);
+      if (await canLaunchUrl(url)) {
+        await launchUrl(url);
       } else {
         throw 'Could not launch $url';
       }
@@ -92,10 +92,10 @@ class Footer extends StatelessWidget {
   }
 
   _launchURL() async {
-    const url = 'https://trade-gypsum.netlify.app';
+    var url = Uri.parse('https://trade-gypsum.netlify.app');
     try {
-      if (await canLaunch(url)) {
-        await launch(url,universalLinksOnly:true);
+      if (await canLaunchUrl(url)) {
+        await launchUrl(url);
       } else {
         throw 'Could not launch $url';
       }
@@ -105,10 +105,10 @@ class Footer extends StatelessWidget {
   }
 
   _launchTelegram() async {
-    const url = 'https://t.me/rewerd_official';
+    var url = Uri.parse('https://t.me/rewerd_official');
     try {
-      if (await canLaunch(url)) {
-        await launch(url,universalLinksOnly:true);
+      if (await canLaunchUrl(url)) {
+        await launchUrl(url);
       } else {
         throw 'Could not launch $url';
       }
@@ -118,10 +118,10 @@ class Footer extends StatelessWidget {
   }
 
   _launchInstagram() async {
-    const url = 'https://instagram.com/rewerd_official';
+    var url = Uri.parse('https://instagram.com/rewerd_official');
     try {
-      if (await canLaunch(url)) {
-        await launch(url,universalLinksOnly:true);
+      if (await canLaunchUrl(url)) {
+        await launchUrl(url);
       } else {
         throw 'Could not launch $url';
       }
@@ -131,9 +131,9 @@ class Footer extends StatelessWidget {
   }
 
   _phoneCall() async {
-    final url = 'tel:+998910116631';
-    if (await canLaunch(url)) {
-        await launch(url,universalLinksOnly:true);
+    var url = Uri.parse('tel:+998910116631');
+    if (await canLaunchUrl(url)) {
+        await launchUrl(url);
     } else {
       throw "Could not launch $url";
     }

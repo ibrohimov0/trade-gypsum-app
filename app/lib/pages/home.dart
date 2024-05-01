@@ -1,3 +1,4 @@
+import 'package:app/components/3d.dart';
 import 'package:app/components/appBar.dart';
 import 'package:app/components/footer.dart';
 import 'package:app/components/header.dart';
