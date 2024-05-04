@@ -1,5 +1,4 @@
 import 'package:app/components/appBar.dart';
-import 'package:app/components/entrance.dart';
 import 'package:app/components/footer.dart';
 import 'package:app/components/header.dart';
 import 'package:app/components/projects.dart';
@@ -21,7 +20,6 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Color(0xff191825),
       body: ListView(
         children: [
-          SplashScreen(),
           Header(),
           ProjectsSection(),
           SizedBox(height: 30,),

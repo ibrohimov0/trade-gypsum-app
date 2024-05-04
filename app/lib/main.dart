@@ -1,3 +1,4 @@
+import 'package:app/components/entrance.dart';
 import 'package:app/pages/home.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Poppins'),
-      home: HomePage()
+      home: SplashScreen()
     );
   }
 } 
