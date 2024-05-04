@@ -1,11 +1,7 @@
-import 'dart:async';
-
-import 'package:app/components/3d.dart';
 import 'package:app/components/appBar.dart';
 import 'package:app/components/entrance.dart';
 import 'package:app/components/footer.dart';
 import 'package:app/components/header.dart';
-import 'package:app/components/open.dart';
 import 'package:app/components/projects.dart';
 import 'package:flutter/material.dart';
 
@@ -25,12 +21,11 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Color(0xff191825),
       body: ListView(
         children: [
-          // LogoEntranceScreen(),
+          SplashScreen(),
           Header(),
           ProjectsSection(),
           SizedBox(height: 30,),
-          Footer(),
-          // OpenEntrance()
+          Footer()
         ]
       ),
     );

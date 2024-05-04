@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -78,11 +76,11 @@ class Footer extends StatelessWidget {
     );
   }
 
-  _launchRewerd() async {
-    var url = Uri.parse('https://instagram.com/rewerd_official');
+_launchRewerd() async {
+    var url = 'https://instagram.com/rewerd_official';
     try {
-      if (await canLaunchUrl(url)) {
-        await launchUrl(url);
+      if (await canLaunch(url)) {
+        await launch(url);
       } else {
         throw 'Could not launch $url';
       }
@@ -92,10 +90,10 @@ class Footer extends StatelessWidget {
   }
 
   _launchURL() async {
-    var url = Uri.parse('https://trade-gypsum.netlify.app');
+    var url = 'https://trade-gypsum.netlify.app';
     try {
-      if (await canLaunchUrl(url)) {
-        await launchUrl(url);
+      if (await canLaunch(url)) {
+        await launch(url);
       } else {
         throw 'Could not launch $url';
       }
@@ -105,10 +103,10 @@ class Footer extends StatelessWidget {
   }
 
   _launchTelegram() async {
-    var url = Uri.parse('https://t.me/rewerd_official');
+    var url = 'https://t.me/rewerd_official';
     try {
-      if (await canLaunchUrl(url)) {
-        await launchUrl(url);
+      if (await canLaunch(url)) {
+        await launch(url);
       } else {
         throw 'Could not launch $url';
       }
@@ -118,10 +116,10 @@ class Footer extends StatelessWidget {
   }
 
   _launchInstagram() async {
-    var url = Uri.parse('https://instagram.com/rewerd_official');
+    var url = 'https://instagram.com/rewerd_official';
     try {
-      if (await canLaunchUrl(url)) {
-        await launchUrl(url);
+      if (await canLaunch(url)) {
+        await launch(url);
       } else {
         throw 'Could not launch $url';
       }
@@ -131,9 +129,9 @@ class Footer extends StatelessWidget {
   }
 
   _phoneCall() async {
-    var url = Uri.parse('tel:+998910116631');
-    if (await canLaunchUrl(url)) {
-        await launchUrl(url);
+    var url = 'tel:+998910116631';
+    if (await canLaunch(url)) {
+        await launch(url);
     } else {
       throw "Could not launch $url";
     }

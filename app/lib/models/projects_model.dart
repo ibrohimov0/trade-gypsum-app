@@ -23,7 +23,8 @@ class ProjectModel {
         boxColor: Color(0xff03001C), 
         iconPath: "assets/images/gypsum(1).png",
         name: "Sinogips", 
-        text: "SINOGIPS 9.5 - гипсокартон патолочный. Размер:(1200*2500*9.5)",
+        text: 
+        "SINOGIPS 9.5 - гипсокартон патолочный. Размер:(1200*2500*9.5)\n \n \n SINOGIPS 9.5 -гипсокартон патолочный влагостойкий. Размер : (1200*2500*9,5)\n \n \n SINOGIPS 12.5 -гипсокартон стеновой влагостойкий. Размер : (1200*2500*12,5)",
         android3dPath: "assets/3d-models/gypsum(1).glb",
         ios3dPath: "assests/3d-models/gypsum(1).usdz"
       )
@@ -32,8 +33,8 @@ class ProjectModel {
       ProjectModel(
         boxColor: Color(0xff03001C), 
         iconPath: "assets/images/gypsum(2).png",
-        name: "Sinogips", 
-        text: "SINOGIPS 9.5 -гипсокартон патолочный влагостойкий. Размер : (1200*2500*9,5)",
+        name: "Glory", 
+        text: "GLORY 9.5 - гипсокартон патолочный. Размер:(1200*2500*9.5)\n \n \n GLORY 9.5 -гипсокартон патолочный влагостойкий. Размер : (1200*2500*9,5)\n \n \n GLORY 12.5 -гипсокартон стеновой влагостойкий. Размер : (1200*2500*12,5)",
         android3dPath: "assets/3d-models/gypsum(2).glb",
         ios3dPath: "assests/3d-models/gypsum(2).usdz"
       )
@@ -42,8 +43,8 @@ class ProjectModel {
       ProjectModel(
         boxColor: Color(0xff03001C), 
         iconPath: "assets/images/gypsum(3).png",
-        name: "Sinogips", 
-        text: "SINOGIPS 12.5 -гипсокартон стеновой влагостойкий. Размер : (1200*2500*12,5)",
+        name: "Sinogips & Glory", 
+        text: "SINOGIPS 9.5 - гипсокартон патолочный. Размер:(1200*2500*9.5)\n \n \n SINOGIPS 9.5 -гипсокартон патолочный влагостойкий. Размер : (1200*2500*9,5)\n \n \n GLORY 12.5 -гипсокартон стеновой влагостойкий. Размер : (1200*2500*12,5)",
         android3dPath: "assets/3d-models/gypsum(3).glb",
         ios3dPath: "assests/3d-models/gypsum(3).usdz"
       )

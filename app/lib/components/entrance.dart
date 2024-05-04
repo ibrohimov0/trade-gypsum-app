@@ -1,40 +1,19 @@
-import 'dart:async';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
+import './mian_screen.dart';
 
-class LogoEntranceScreen extends StatefulWidget {
-  @override
-  _LogoEntranceScreenState createState() => _LogoEntranceScreenState();
-}
-
-class _LogoEntranceScreenState extends State<LogoEntranceScreen> {
-  double _opacity = 0.0;
-  Timer? _timer;
-
-  @override
-  void initState() {
-    super.initState();
-    _timer = Timer(Duration(milliseconds: 500), () {
-      setState(() {
-        _opacity = 1.0;
-      });
-    });
-  }
-
-  @override
-  void dispose() {
-    _timer?.cancel();
-    super.dispose();
-  }
-
+class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: AnimatedOpacity(
-          opacity: _opacity,
-          duration: Duration(milliseconds: 100),
-          child: FlutterLogo(size: 200),
-        ),
+    return Container(
+      child: AnimatedSplashScreen(
+        duration: 3000,
+        splash: Icons.home,
+        nextScreen: MainScreen(),
+        splashTransition: SplashTransition.fadeTransition,
+        pageTransitionType: PageTransitionType.scale,
+        backgroundColor: Colors.blue,
       ),
     );
   }
